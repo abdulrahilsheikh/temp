@@ -1,0 +1,119 @@
+.container {
+    width: 50vw;
+    height: 100%;
+    // background-color: var(--chinese-violet);
+    background-color: #403d39;
+    // border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-left: thin solid #252422;
+    animation: fadeIn 0.5s ease;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    &.fadeOut {
+        animation: fadeOut 0.5s ease;
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+
+
+    .header {
+        height: 1.5rem;
+        background-color: var(--dark-purple);
+        background-color: #252422;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        div {
+            background-color: tomato;
+            cursor: pointer;
+            padding: 0.25rem;
+        }
+    }
+
+    .terminal {
+        flex: 1;
+        overflow: auto;
+        background-color: #403d39;
+        color: var(--buff);
+        font-size: 1.125rem;
+
+        i {
+            color: #a9def9;
+        }
+    }
+
+    .inputSectionContainer {
+        padding: 0.5rem;
+
+        .inputSection {
+            display: flex;
+            gap: 0.25rem;
+            background-color: #252422;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            align-items: center;
+
+            i {
+                color: #1a535c;
+            }
+
+            input {
+                background-color: transparent;
+                outline: none;
+                border: none;
+                flex: 1;
+                font-family: 'VT323', monospace;
+                font-size: 1.125rem;
+                color: #fff;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        height: 1rem;
+        height: 1.5rem;
+
+        &>* {
+            color: #fff;
+            padding: 0 1rem;
+            width: 6rem;
+            display: flex;
+            justify-content: center;
+            background-color: var(--dark-purple);
+            align-items: center;
+        }
+
+        &>*:nth-child(2) {
+            color: black;
+            background-color: var(--china-rose);
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.error {
+    color: tomato;
+}

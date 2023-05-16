@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Hachi+Maru+Pop&family=IBM+Plex+Mono&family=Montserrat+Alternates&family=Poppins:ital,wght@1,300&family=VT323&display=swap');
+
+:root {
+  --yinmn-blue: #355070ff;
+  --chinese-violet: #6d597aff;
+  --china-rose: #b56576ff;
+  --light-coral: #e56b6fff;
+  --buff: #eaac8bff;
+  --russian-violet: #3a015cff;
+  --russian-violet-2: #32004fff;
+  --russian-violet-3: #220135ff;
+  --dark-purple: #190028ff;
+  --dark-purple-2: #11001cff;
+  --dark-grey-1: #252422;
+  font-family: 'VT323', monospace;
+  font-size: 1.125rem;
+}
+
+/* :root {
+  --russian-violet: #3a015cff;
+  --russian-violet-2: #32004fff;
+  --russian-violet-3: #220135ff;
+  --dark-purple: #190028ff;
+  --dark-purple-2: #11001cff;
+  font-family: 'VT323', monospace;
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}

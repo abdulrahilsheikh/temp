@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Hachi+Maru+Pop&family=IBM+Plex+Mono&family=Montserrat+Alternates&family=Poppins:ital,wght@1,300&family=VT323&display=swap');
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: var(--dark-grey-1);
+    align-items: center;
+    justify-content: center;
+
+    .infoSectionContainer {
+        width: 50% !important;
+        height: 100% !important;
+        overflow: hidden;
+        transition: all 0.5s ease;
+
+        &.isVisible {
+            width: 0 !important;
+        }
+    }
+
+    .infoSection {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'IBM Plex Mono';
+        background-color: #403d39;
+        height: 100% !important;
+        flex-direction: column;
+
+        h1 {
+            color: var(--buff);
+        }
+    }
+
+    .callToActionBtn {
+        padding: 1rem;
+        color: #ccc5b9;
+        text-decoration: none;
+        transition: all 0.5s linear;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .exitBtn {
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 100;
+    }
+}

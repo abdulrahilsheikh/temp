@@ -1,0 +1,14 @@
+import { NextResponse } from "next/server";
+
+export default function middle(request) {
+	if (request.nextUrl.pathname.endsWith("/login")) {
+		const cookie = request.cookies;
+		console.log(cookie);
+		if (request.cookies.has("token")) {
+			console.log("done");
+			return NextResponse.next();
+		} else {
+			return NextResponse.rewrite(new URL("/home", request.url));
+		}
+	}
+}

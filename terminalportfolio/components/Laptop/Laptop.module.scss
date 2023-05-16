@@ -1,0 +1,19 @@
+.screen {
+    height: 100vh;
+    min-width: 50% !important;
+    flex: 1;
+    transition: all 0.5s ease;
+    position: relative;
+
+    &.width {
+        width: 100%;
+    }
+
+    .terminalWrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        // height: 100%;
+    }
+}
